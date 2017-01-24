@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="learn javascript by www.liaoxuefeng.com">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<script src="/static/js/bootstrap.js"></script>
+</head>
+
+<body>
+	<header class="navbar navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="/" class="navbar-brand">Bevis' JavaScript</a>
+			</div>
+			<nav class="collapse navbar-collapse" id="bs-navbar">
+				<ul class="nav navbar-nav">
+					<li><a target="_blank" href="https://utopia1991.github.io/">我的博客</a></li>
+					<li><a target="_blank" href="https://github.com/utopia1991">Github</a></li>
+					<li><a target="_blank" href="http://getbootstrap.com/">Bootstrap</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="important" style="color:#cdbfe3; background-color:#6f5499; padding:30px 0; margin:-20px 0 20px 0;">
+		<div class="container">
+			<h1 style="color:#fff; font-size:60px">Bevis Shen</h1>
+			<p style="font-size:24px; line-height:48px">JavaScript, Node.js, npm, koa2, nunjucks, babel, etc.</p>
+		</div>
+	</div>
+	{% block main %}
+	{% endblock %}
+	<footer style="background-color:#ddd; padding: 20px 0;">
+		<div class="container">
+			<p>
+				<a target="_blank" href="https://utopia1991.github.io/">我的博客</a> -
+				<a target="_blank" href="https://github.com/utopia1991">Github</a> -
+				<a target="_blank" href="http://weibo.com/bevis19910619">微博</a>
+			</p>
+			<p>This page is created by <a target="_blank" href="https://utopia1991.github.io/">Bevis Shen</a>.</p>
+		</div>
+	</footer>
+</body>
+
+</html>
