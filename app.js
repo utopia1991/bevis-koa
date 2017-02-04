@@ -16,8 +16,6 @@ const WebSocketServer = ws.Server;
 
 const app = new Koa();
 
-const port = 2000;
-
 // log request URL:
 app.use(async (ctx, next) => {
     console.log(`Process ${ctx.request.method} ${ctx.request.url}...`);
@@ -46,7 +44,7 @@ app.use(templating('views', {
 // add controller middleware:
 app.use(controller());
 
-let server = app.listen(port);
+let server = app.listen(3000);
 
 function parseUser(obj) {
     if (!obj) {
@@ -154,4 +152,4 @@ function onClose() {
 
 app.wss = createWebSocketServer(server, onConnect, onMessage, onClose);
 
-console.log('app started at port ' + port);
+console.log('app started at port 3000...');
