@@ -1,43 +1,38 @@
 {% extends "base.html" %} {% block main %}
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>WebSocket Chat</h1>
-            <div class="alert alert-danger">Please sign in before join the room.
-            </div>
-        </div>
-    </div>
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Bevis 聊天室</h1>
+			<div class="alert alert-danger">进入聊天室之前请登录</div>
+		</div>
+	</div>
 
-    <div class="row">
-        <div class="col-md-6">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title"><span class="glyphicon glyphicon-user"></span> Please sign in</h3>
-                </div>
-                <div class="panel-body">
-                    <form action="/signin" method="post">
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input type="text" name="name" class="form-control" placeholder="你的昵称" value="{{ name }}">
-                            <p class="help-block">Your user name</p>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Sign In</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title"><span class="glyphicon glyphicon-hd-video"></span> Video training</h3>
-                </div>
-                <div class="panel-body">
-                    <video width="100%" controls="controls">
-                        <source src="https://github.com/michaelliao/learn-javascript/raw/master/video/vscode-nodejs.mp4">
-                    </video>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="row">
+		<div class="col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><span class="glyphicon glyphicon-user"></span> 登录</h3>
+					</div>
+					<div class="panel-body">
+						<form action="/signin" method="post">
+							<div class="form-group">
+								<label>用户名</label>
+								<input type="text" name="name" class="form-control" placeholder="你的昵称" value="{{ name }}">
+								<p class="help-block">您的名字</p>
+							</div>
+							<button type="submit" class="btn btn-primary">登录</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		<div class="col-md-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">欢迎欢迎 👏</h3>
+				</div>
+				<div class="panel-body"></div>
+			</div>
+		</div>
+	</div>
 </div>
 {% endblock %}
